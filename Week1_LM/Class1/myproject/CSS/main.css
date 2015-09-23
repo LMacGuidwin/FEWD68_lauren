@@ -1,0 +1,30 @@
+
+
+.header-class{
+  font-size: 70pt;
+}
+h1{
+  text-align: center;
+  color: white; 
+  font-weight: bold;
+  font-family: roboto;
+}
+p{
+  color: white;
+  font-family: roboto;
+  padding: 10pt;
+  }
+  li{
+    color:white;
+    font-size: 30pt;
+    font-family: roboto;
+  }
+  #myid{
+font-weight: bold;
+
+  }
+footer{
+  color:white;
+  font-size: 9pt;
+  font-family:roboto;
+  }
