@@ -3,19 +3,45 @@
 <head>
   <meta charset="UTF-8">
   <title>Portfolio</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Slabo+13px' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/main.css">
 
   <style>
 img.one {
-    border-style: solid;
-    border-width: 2px;
-    border-color: #0099FF;
+    border-style: dashed;
+    border-width: 5px;
+    border-color: #00000;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
 }
+.pretty{
+  font-size: 50pt;
+  font-family: roboto;
+}
+  h2{
+    font-size: 20pt;
+    font-family: roboto;
+    color:white;
+    text-align: center;
+  }
+  p{
+    font-family: roboto;
+    font-size: 15pt;
+    }
+  span{
+    font-style: italic;
+    font-family: roboto;
+    color:white;
+    font-size: 10pt;
+
+  }
 </style>
 </head>
-<body>
+<body style="background-color: #0099FF;">
 
-  <h1>Portfolio of Things in This Class</h1>
+  <h1 class=pretty>Portfolio of Things in This Class</h1>
 
   <p>The FEWD course will go through things like...</p>
 
@@ -32,6 +58,6 @@ img.one {
   <img class = one src="assets/frolick.gif">
   	<h3>Javascript and jQuery make things move, apparently! I don't really know WTF these things do, but I'm excited to find out.</h3>
 
-  	<p>See my About Page <a href = "index.html">here</a>.</p>
+  	<span>See my About Page <a href = "index.html">here</a>.</span>
   </body>
   </html>

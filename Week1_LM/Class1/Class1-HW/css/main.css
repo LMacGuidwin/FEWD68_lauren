@@ -1,11 +1,21 @@
-main.css
+
+ul{
+	float: left;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	list-style-image: src = "assets/Volleyball.png";
+}
+/* Why is this image of a Volleyball.png not showing? */
 
 h1{
-	font-size: 40pt;
-	font-family: roboto;
-	color: white;
-	align: center;
-}
+  	font-family: roboto;
+  	font-size: 40px;
+  	color: green;
+  	text-align: center;
+  	text-decoration: underline;
+
+  }
 img{
 	align: center;
 }
@@ -14,6 +24,16 @@ section{
 	padding: 50px;
 	font-family: roboto;
 	font-size: 12pt;
+
+}
+span.firstletter{
+	font-size: 50px;
+	float: left;
+	clear:right;
+}
+.pretty{
+	font-size: 60pt;
+	text-align: center;
 }
 
 .displayed {
@@ -25,8 +45,8 @@ footer{
 	color:white;
 }
 span{
-	padding-left: 35pt;
-	padding-bottom: 35pt;
+	padding-left: 20pt;
+	padding-bottom: 20pt;
 	font-style: italic;
 	font-size: 9pt;
 	font-family: roboto;
