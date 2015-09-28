@@ -1,12 +1,16 @@
 
-ul{
+ul li{
+	display: inline-block;
 	float: left;
-	width: 100%;
 	padding: 0;
 	margin: 0;
-	list-style-image: src = "assets/Volleyball.png";
+	list-style: none;
 }
-/* Why is this image of a Volleyball.png not showing? */
+/* Why is this image of a Volleyball.png not showing? I tried doing "url(http://volleyballimage random") and that didn't work either!*/
+li.before{
+	content: ' ';
+	background: "assets/Volleyball.png"; width: 2px; height: 2px;
+}
 
 h1{
   	font-family: roboto;
