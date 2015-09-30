@@ -2,14 +2,21 @@
 ul li{
 	display: inline-block;
 	float: left;
-	padding: 0;
-	margin: 0;
+	padding: 10px;
+	margin: 0.5px;
+	border: 10px;
 	list-style: none;
+	background-color: white;
+	font-size: 20px;
 }
 /* Why is this image of a Volleyball.png not showing? I tried doing "url(http://volleyballimage random") and that didn't work either!*/
-li.before{
-	content: ' ';
-	background: "assets/Volleyball.png"; width: 2px; height: 2px;
+li:before{
+	content: '';
+	background: transparent
+		url("../assets/Volleyball.jpg")
+		center
+		no-repeat; 
+	width: 2px; height: 2px;
 }
 
 h1{
@@ -48,10 +55,21 @@ span.firstletter{
 footer{
 	color:white;
 }
-span{
+/*span{
 	padding-left: 20pt;
 	padding-bottom: 20pt;
-	font-style: italic;
 	font-size: 9pt;
 	font-family: roboto;
+}*/
+p::first-letter{
+	font-size: 20pt;
+	font-family:Courier;
+	color: purple;
+}
+
+a:hover{
+	color:yellow;
+}
+a:visited{
+	color:green;
 }
