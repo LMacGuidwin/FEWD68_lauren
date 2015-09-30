@@ -10,18 +10,19 @@
 }
 
 h1{
-  font-size: 24px;
-  font-weight: bolder;
+  font-weight: bold;
   color: #f9e42e;
   display: inline;
   /*float:left;*/
   font-family: 'Open Sans', sans-serif;
   padding-top: 2px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
 }
 
 h2{
   color: white;
-  font-weight: bold;
+  padding-top: 200px;
   font-size: 14px;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
@@ -37,6 +38,7 @@ h3{
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   border: 5px;
+  padding-left: 500px;
 }
 
 h4{
@@ -95,9 +97,8 @@ header{
 #title{
   z-index: 100;
   position: absolute;
-  color:yellow;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 35pt;
+  color:white;
+  
 }
 
 .header{
@@ -150,6 +151,7 @@ div.CTA{
   width:1200px;
   height:394px;
   background-image: url(../assets/testimonial_bg.jpg);
+  display: inline-block;
 }
 
 span{
