@@ -1,9 +1,20 @@
+/*I'm not really understanding how divs, the box model, and floats fit together...*/
+
+.clearfix {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
 h1{
   font-size: 24px;
   font-weight: bolder;
   color: #f9e42e;
   display: inline;
-  float:left;
+  /*float:left;*/
   font-family: 'Open Sans', sans-serif;
   padding-top: 2px;
 }
@@ -31,14 +42,45 @@ h3{
 h4{
   font-weight: bold;
   font-size: 20px;
-  color: gray;
+  color: #121212;
   font-family: 'Open Sans', sans-serif;
+}
+
+div.top{
+  width:1200px;
+  height:700px;
+  background-image: url(../assets/header_bg.jpg);
+}
+
+div.main-content{
+  display: block;
+  background-color: white;
+  text-align: left;
+  padding-left: 50px;
+  width: 60%;
+  float: left;
+}
+
+div.sidebar{
+  width:40%;
+  float: right;
 }
 
 p{
   color:#606161;
   font-family: 'Open Sans', sans-serif;
 }
+
+li{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px;
+  color: #606161;
+}
+
+header{
+  background-image: 
+}
+
 #header{
   width:1024px;
   position: relative;
@@ -70,31 +112,52 @@ p{
 
 .main-content{
   height: 500px;
-  width:75%;
+  width:100%;
 }
 
 .wrapper{
   margin:0 auto;
   width: 980px;
 }
+
+div.CTA{
+  display: inline-block;
+  background-color: #f9e42e;
+  width:300px;
+  height:50px;
+  border: 50px;
+  padding: 2px;
+  margin:0px;
+  text-align: center;
+}
+
 .CTA{
   font-size: 12px;
   border:5px;
   text-align: center;
-  background-color: yellow;
-  font-weight: semibold;
+  background-color: #f9e42e;
+  font-weight: bold;
   font-family: 'Open Sans', sans-serif;
 }
 .Amanda_quote{
   font-style: italic;
   font-size: 18px;
   font-family: 'Open Sans', sans-serif;
+  color:white;
 }
+
+.testimonials{
+  width:1200px;
+  height:394px;
+  background-image: url(../assets/testimonial_bg.jpg);
+}
+
 span{
   font-size: 18px;
   font-weight: bolder;
   border: 5px;
   font-family: 'Open Sans', sans-serif;
+  color:white;
 }
 
 .footer-title{
