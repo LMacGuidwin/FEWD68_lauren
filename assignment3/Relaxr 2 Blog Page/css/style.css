@@ -126,6 +126,7 @@ a.menu{
   text-decoration: none;
   color: #f9e42e;
   font-size: 17px;
+  font-weight: 600px;
 }
 
 a{
@@ -141,12 +142,28 @@ a{
   padding-top: 20px;
   display: inline-block;
   padding-left: 20px;
+  padding-bottom: 20px;
+  border-bottom: 5px solid;
   /*padding-left: 40px;
   padding-top: 40px;*/
 }
 
+
+/* I tried to do the drop letter but couldn't do it with the pseudoselector of ::firstletter so I gave up :) ;
+Plus I think they're ugly design SO...
+.drop{
+  font-size: 200%;
+  float:left;
+  color:black;
+  padding: 0 0 0 0;
+}*/
+
 .article{
   line-height: 30px;
+}
+
+.blogpost.article::firstletter{
+  font-size: 200%;
 }
 
 h2{
@@ -163,7 +180,12 @@ p{
   color:#606161;
   font-family: 'Open Sans', sans-serif;
   padding-bottom: 40px;
-  border-bottom: solid;
+  /*border-bottom: solid;*/
+}
+
+#blurb{
+  border-bottom: none;
+  line-height: 20px;
 }
 
 p::firstletter{
@@ -255,16 +277,17 @@ button{
 
 .end{
   background-color: #121212;
-  height:300px;
+  height:250px;
   margin: 0 auto;
-  /*padding-left: 400px;*/
 }
 
 .social{
   display: inline-block;
+  width: 960px;
+  margin: 0 auto;
   text-align: center;
-  margin: auto;
-
+  padding-top: 10px;
+  padding-bottom: 20px;
 }
 
 footer {
@@ -274,18 +297,24 @@ footer {
 
 span{
   color:white;
+  width: 960px;
   text-align: center;
   clear:both;
   float:none;
   display: inline-block;
+
 }
 
-h1.yellow{
+h6{
   display: inline-block;
+  width:960px;
   color:yellow;
   margin: 0 auto;
-  font-weight: bold;
+  font-weight: 800;
+  font-size: 50px;
   font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  padding-top: 40px
 }
 
 
@@ -294,7 +323,8 @@ footer.div{
   text-align: center;
   background-color:#121212;
   width:920px;
-  height:300px;
+  height:200px;
+
 }
 
 /******************************************
