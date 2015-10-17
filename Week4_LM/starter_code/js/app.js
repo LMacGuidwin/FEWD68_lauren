@@ -22,61 +22,61 @@ Remove extra spaces or new lines that users or the browser might add before or a
 Reset the user input field after it is submitted
 */
 
-
  //LM: Get user answer
 //Store in variable named "city"
-var city = $("input:submit").val("");
+
+$(document).ready(function() {
+
+//var city = $("#city-type").val();
 
 //run function when user hits submit button
-$("#submit-btn").on("picChange") 
+$("#submit-btn").click(picChange) 
 
-function(picChange){
+function picChange(){
+
+  console.log("Hello, World");
+
+event.preventDefault();
 
 //If the user says their city is NYC, then make background nyc.jpg
-  if (city == "New York City" || city =="NYC" || city == "New York" || city == "Manhattan" || city == "Big Apple"){
-     function NYC(){
-    $("body").attr("background", "url(../images/nyc.jpg)");
-  }
 
-  $("#submit-btn").click(NYC);
-} 
+var city = $("#city-type").val();
+$("#city-type").val("Enter a new city...");
+//"#city-type" = "Enter a city name..."
 
+if (city == "New York City" || city == "NYC" || city == "New York" || city == "Manhattan" || city == "Big Apple"){
+    $("body").attr("class", "nyc");
+}
 
 //Else if the user says their city is SF, then make background sf.jpg
+
 else if (city == "San Francisco" || city == "SF" || city == "Bay Area") {
-      function SF(){
-          $("body").css("background", "../images/sf.jpg");
+      $("body").attr("class", "sf");
         }
-          $("#submit-btn").click(SF);
-  };
     
 
 //Else if the user says their city is LA, then make background la.jpg
-  else if (city == "LA" || city == "Los Angeles" || city == "City of Angels") {
-      function LA(){
-          $("body").css("background", "../images/la.jpg");
-        }
-          $("#submit-btn").click(LA);
-  };
+else if (city == "LA" || city == "Los Angeles" || city == "City of Angels") {
+      $("body").attr("class", "la");
+  }
 
 //Else if the user says their city is Austin, then make background austin.jpg
-  else if (city == "Austin" || city == "ATX") {
-    function austin(){
-          $("body").css("background", "../images/austin.jpg");
-        }
-          $("#submit-btn").click(austin);
-
-  };
+else if (city == "Austin" || city == "ATX") {
+          $("body").attr("class", "austin");
+  }
 
 
 //Else if the user says their city is Sydney, then make background sydney.jpg
-  else if (city == "Sydney") {
-    function sydney(){
-          $("body").css("background", "../images/sydney.jpg");
-        }
-          $("#submit-btn").click(sydney);
-
+else if (city == "Sydney") {
+          $("body").attr("class", "sydney");
   };
 
+}
 
-)}
+});
+
+
+
+
+
+
