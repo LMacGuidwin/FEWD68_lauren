@@ -1,0 +1,86 @@
+
+
+.gray{
+  height: 40px;
+  padding: 15px;
+  border: 3px solid gray;
+}
+
+nav {
+  outline: 1px solid grey; padding: 1px; overflow:hidden;
+  float: right;
+  width: 10%;
+}
+.smallGray{
+  /*float:left;*/
+  width: 75%;
+  background: grey;
+  height: 5px;
+  border: 1px solid gray;
+  margin:10px 1%;
+
+}
+
+.red{
+  margin-top:10px;
+  height:250px;
+  border:3px solid red;
+}
+
+.green{
+  float: left;
+  width: 20%;
+  height: 300px;
+  border: 3px solid green;
+  margin: 50px 10px 50px 10px;
+
+}
+.blue{
+  height: 100px;
+  padding: 15px;
+  border: 3px solid blue;
+  clear: both;
+}
+
+.smallBlue{
+  float: left;
+  width: 30%;
+  height: 50px;
+  margin: 15px 5px 10px 5px;
+  border: 3px solid blue;
+}
+
+
+/*@media (min-width: 200px) and (max-width: 400px){*/
+
+
+/*div.smallGray{
+  display: none;
+}*/
+@media (min-width: 500px) {
+
+nav {
+ padding: 1px; overflow:hidden;
+  width: 100%;
+}
+.smallGray{
+  float:left;
+  width: 20%;
+  background: grey;
+  height: 25px;
+  background: none;
+
+}
+}
+div.blue{
+  height:100px;
+}
+div.smallBlue{
+  height:30px;
+  width:100%;
+}
+
+
+
+/*
+}*/

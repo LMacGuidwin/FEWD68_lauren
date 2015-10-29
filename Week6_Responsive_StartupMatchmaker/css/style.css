@@ -1,0 +1,371 @@
+/*
+Project Name: Blank Template
+Client: Your Client
+Author: Your Name
+Developer @GA in NYC
+*/
+
+
+/******************************************
+/* SETUP
+/*******************************************/
+
+/* Box Model Hack */
+* {
+     -moz-box-sizing: border-box; /* Firexfox */
+     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
+     box-sizing: border-box; /* IE */
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+.alignright {
+	float: right;
+	padding: 0 0 10px 10px; /* note the padding around a right floated image */
+}
+
+.alignleft {
+	float: left;
+	padding: 0 10px 10px 0; /* note the padding around a left floated image */
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+.nav{
+  background-color: black;
+  padding: 20px 0px 0px 20px;
+  width:100%;
+  height: 110px;
+  border-bottom: yellow solid;
+}
+nav.mobile{
+  display: none;
+}
+div.line{
+  /*display: inline-block;*/
+  margin-bottom: 4px;
+  width:30px;
+  height:2px;
+  background-color: yellow;
+}
+
+h1{
+  color: yellow;
+  font-family: Georgia;
+  font-size: 30px;
+  font-weight: bold;
+  
+}
+
+nav li{
+  float:left;
+  display: inline-block;
+  text-decoration: none;
+  padding: 20px 0px 20px 0px;
+  width: 110px;
+  height: 30px;
+  color: white;
+
+}
+
+nav li a{
+  text-decoration: none;
+  color:white;
+  font-family: Arial, sans-serif;
+  display: inline-block;
+}
+
+.caps{
+  
+  font-family: Arial, sans-serif;
+  font-style: bold;
+  width:170px;
+  display: inline-block;
+}
+
+.menu{
+  margin-left: 150px;
+}
+
+/*.menu{
+  color:white;
+  float:left;
+  display: inline-block;*/
+}
+
+.caps{
+  color:white;
+  font-weight: bold;
+  font-family: Arial;
+}
+
+h2{
+  display: inline-block;
+  background-color: gray;
+  width:100%;
+  height: 80px;
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 25px;
+  width:100%;
+}
+
+#strikethrough{
+  text-decoration: line-through;
+}
+
+#underline{
+   border-bottom: 2px solid yellow;
+}
+
+.image{
+  background: url("../images/coworking.jpg");
+  height: 600px;
+  width: 100%;
+  background-repeat: no-repeat;
+}
+
+.overlay{
+  clear: both;
+  display: inline-block;
+  background-color: rgba(255, 255, 255, .7);
+  border: gray solid 2px;
+  padding: 30px 0px 30px 30px;
+  float:right;
+  width: 250px;
+  height:300px;
+  font-family: Arial, sans-serif;
+  margin: 30px 30px 0px 0px;
+  padding-right: 15px;
+}
+
+h3{
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Arial, sans-serif;
+  opacity: 1.0;
+}
+
+p{
+  margin-top: 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  font-family: Helvetica;
+  line-height: 25px;
+}
+
+#yellow{
+background-color: yellow;
+border:none;
+box-shadow: 10px;
+font-weight: bold;
+font-size: 15px;
+padding: 10px 25px 10px 25px;
+opacity: 1.0;
+margin-top: 25px;
+}
+
+#blurb1{
+  display: inline-block;
+  float:left;
+  width: 250px;
+  height: 200px;
+  margin: 30px 0px 30px 30px;
+  padding-right: 30px;
+  border-right: 1px solid;
+  border-color: gray;
+}
+
+#blurb2{
+  display: inline-block;
+  float:left;
+  width: 250px;
+  height: 200px;
+  margin: 30px 0px 30px 30px;
+  padding-right: 30px;
+  border-right: 1px solid;
+  border-color: gray;
+}
+
+#blurb3{
+  display: inline-block;
+  float:left;
+  width: 250px;
+  height: 200px;
+  margin: 30px 0px 30px 30px;
+  padding-right: 30px;
+}
+
+h4{
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+button.gray{
+  width: 200px;
+  height:50px;
+  color:black;
+  background-color: gray;
+  border: none;
+  box-shadow: 2px solid;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 8px;
+}
+
+#footer{
+  background-color: black;
+  display: inline-block;
+  padding: 20px 0px 20px 20px;
+  width:100%;
+}
+
+#footer span{
+  color:white;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+/******************************************
+/*  STYLES FOR NEXT PAGE
+/*******************************************/
+
+.background{
+  background-color: gray;
+}
+
+.card{
+  display: inline-block;
+  background-color: white;
+  width: 290px;
+  height:320px;
+  padding:5px 5 5 5;
+  margin: 10px 10 10 10;
+  position: relative;
+  top: 10px;
+}
+
+.square{
+  display: inline-block;
+  margin: 5px 5 5 5;
+  background-color: #B8B8B8;
+  width: 280px;
+  height:280px;
+  position: relative;
+  left: 10px;
+}
+
+
+.contact{
+  background-color: yellow;
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 20px;
+  border: none;
+  box-shadow: 1px 1px 1px gray;
+  width: 215px;
+}
+
+
+
+@media (min-width: 100px) and (max-width: 500px){
+  
+  .image{
+    height:350px;
+  }
+  h1{
+    font-size: 24px;
+    float:left;
+  }
+
+  nav.normal{
+    display: none;
+  }
+
+nav.mobile{
+  display:inline-block;
+  float: right;
+  width:30px;
+  margin-right: 20px;
+  margin-left:0px;
+  margin-top: 0px;
+  padding: 0px 0 0 0;
+/*  clear:both;*/
+overflow: hidden;
+}
+
+#hamburger:onclick{
+  nav.normal{
+
+  }
+}
+
+.line{
+  margin:0px 0 0 0;
+
+}
+
+div#blurb1{
+  display:block;
+  width:100%;
+  padding:0px 0 0 0 ;
+  margin:5px 0 0 0px;
+  border-right: none;
+}
+
+h2{
+  display: none;
+}
+
+div#blurb2{
+  display:block;
+  width:100%;
+  padding:0px 0 0 0;
+  margin:2px 0 0 0px;
+  border-right: none;
+}
+
+div#blurb3{
+  display:block;
+  width:100%;
+  padding:0px 0 0 0 ;
+  margin:5px 0 0 0px;
+  border-right: none;
+}
+
+  button.gray{
+    width:100%;
+    padding:0px 0 0 0;
+    margin: 2px 0 0 0 ;
+    }
+
+div#line{
+  display:inline-block;
+  background-color: yellow;
+}
+}
+
