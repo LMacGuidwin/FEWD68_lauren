@@ -61,7 +61,7 @@ h4{
 }
 
 div.top{
-  width:1200px;
+  width:100%;
   height:700px;
   background-image: url(../assets/header_bg.jpg) ;
   padding:0px;
@@ -115,7 +115,7 @@ li{
 
 .wrapper{
   margin:0 auto;
-  width: 980px;
+  width: 100%;
 }
 
 /*div.CTA{
@@ -130,7 +130,7 @@ li{
 }*/
 
 div.CTA{
-  width: 1200px;
+  width: 100%;
   height:50px;
   background-color:#f9e42e;
   padding:13px 0 0 0 ;
@@ -185,10 +185,33 @@ p.name{
 
 footer{
   background-color: #606161;
-  width:1200px;
+  width:100%;
   height:225px;
   font-size: 9px;
   font-weight: bolder;
   text-align: center;
   font-family: 'Open Sans', sans-serif;
+}
+
+
+/*MOBILE*/
+
+@media (min-width: 50px) and (max-width: 700px) {
+  
+h1{margin:auto;}
+div.top{height: 450px;}
+div.main{
+  height:260px;
+  padding-left:20px;
+}
+p{
+  width:90%;
+}
+
+button.button{
+  width:90%;
+  height:30px;
+  margin:2px 20px 2px 20px;
+}
+  
 }
