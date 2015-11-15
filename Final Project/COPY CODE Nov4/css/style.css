@@ -38,11 +38,6 @@ li{
   list-style: none;
 }
 
-.underline{
-text-decoration: underline;
-font-weight: bold;
-}
-
 button:hover{
   font-weight: bold;
   text-decoration: underline;
@@ -113,18 +108,9 @@ HOVER STATES
   background-color: rgba(0, 0, 0, .15);
 }
 
-.doneFiltered{
-  background-color: rgba(0, 0, 0, .15);
-  color:rgb(153,255,204);
-}
-
 .notDone:hover{
   background-color: rgba(0, 0, 0, .15);
-}
 
-.notDoneFiltered{
-  background-color: rgba(0, 0, 0, .15);
-  color: rgb(240, 230, 140);
 }
 
 

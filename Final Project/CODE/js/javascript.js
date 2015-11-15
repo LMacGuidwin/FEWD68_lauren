@@ -1,9 +1,15 @@
+$(document).ready(function(){
 
+$(".doneFilter").click(function(){
 
-var main = function(){
-    $(".doneFilter").click(function(){
-    $("div.notDone").addClass("invisible");
+    $("div.notDone").toggleClass("invisible");
+    $("div.done").toggleClass("doneFiltered");
+    $("doneFilter").toggleClass("underline");
     });
-};
 
-(document).ready(main);
+$(".undoneFilter").click(function(){
+
+    $("div.done").toggleClass("invisible");
+    $("div.notDone").toggleClass("notDoneFiltered");
+    });
+}); //doc ready
