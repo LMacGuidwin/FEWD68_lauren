@@ -93,6 +93,15 @@ input[type=radio]{
   margin:0px;
 }
 
+input[type=submit]{
+  background-color: #033048;
+  color:white;
+  font-weight: bold;
+  border-radius: 3px;
+  float:left;
+  margin-top:15px;
+}
+
 
 select{
    padding:2px 2px 2px 2px;
