@@ -14,4 +14,6 @@ $('#accordion').find('.accordionButton').click(function(){
       $(".accordionContent").not($(this).next()).slideUp('fast');
 
     });
+
+//look up offset top. Will scroll down or up depending on offset
   });
