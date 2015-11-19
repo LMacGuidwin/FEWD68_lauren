@@ -1,0 +1,45 @@
+style.css
+
+.top{
+  display: inline-block;
+  width:1000px;
+  height:500px;
+  background-color: black;
+}
+
+h1{
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  color:pink;
+  background-color: black;
+  height: 100px;
+  width:100%;
+  text-align: center;
+  margin: 0 0 0 0 ;
+  padding-top: 30px;
+
+}
+
+input{
+  display: inline-block;
+
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  width:200px;
+  height: 25px;
+}
+
+.list{
+  display: inline-block;
+ /* padding-left: 50px;*/
+  padding-top: 25px;
+}
+
+ul{
+  list-style: circle;
+}
+
+li:hover{
+  text-decoration: line-through;
+}
