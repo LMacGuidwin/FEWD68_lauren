@@ -127,6 +127,10 @@ HOVER STATES
   color: rgb(240, 230, 140);
 }
 
+.selected{
+  text-decoration: underline;
+  font-weight: bold;
+}
 
 
 /*text changes to green on items completed*/
