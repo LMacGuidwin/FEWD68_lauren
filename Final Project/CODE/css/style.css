@@ -1,28 +1,79 @@
 * {box-sizing: border-box;}
 
+.aboutPage {
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    z-index: 100;
+    background-color: green;
+}
+.reveal{
+  display: inline;
+   width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    opacity: 0.5;
+    z-index: 100;
+    background-color: green;
+}
+
+
 nav{
-  margin:auto;
+  margin: 0 auto;
   /*margin-top:0px;*/
   background-color: white;
   width: 100%;
   height: 70px;
   position:fixed;
   top:0;
+  transition: top 0.2s ease-in-out;
 }
 
-#headerWrap {
-    width: 100%;
-    position: fixed;
-    background-color: #e0e0e0;
+.nav-up {
+  top: -65px;
 }
 
+#header{
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+li{
+  margin: 5px 20px 15px 20px;
+  float: left;
+  list-style: none;
+  padding: 0px;
+  height: 24px;
+  display:inline;
+}
+
+#circle {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  background: #64C2D0;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+/*
 .leftSide{
   margin-left: 25px;
 }
 
 .rightSide{
   margin-left: 400px;
-}
+}*/
 
 button{
   border-style: none;
@@ -31,12 +82,7 @@ button{
   font-size: 20px;
 }
 
-li{
-  display: inline-block;
-  margin: 5px 20px 15px 20px;
-  float: left;
-  list-style: none;
-}
+
 
 .underline{
 text-decoration: underline;
@@ -127,9 +173,13 @@ HOVER STATES
   color: rgb(240, 230, 140);
 }
 
+.about{
+  height: 40px;
+
+}
+
 .selected{
   text-decoration: underline;
-  font-weight: bold;
 }
 
 
@@ -167,6 +217,8 @@ HOVER STATES
   float:left;
   color: rgb(240, 230, 140);
 }
+
+
 
 
 

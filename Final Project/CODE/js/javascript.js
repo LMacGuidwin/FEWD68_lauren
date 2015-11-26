@@ -1,5 +1,47 @@
 $(document).ready(function(){
 
+///NAV BAR HIDE/SHOW, note copied from JSFiddle
+// Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('nav').outerHeight();
+
+$(window).scroll(function(event){
+    didScroll = true;
+});
+
+setInterval(function() {
+    if (didScroll) {
+        hasScrolled();
+        didScroll = false;
+    }
+}, 250);
+
+function hasScrolled() {
+    var st = $(this).scrollTop();
+    
+    // Make sure they scroll more than delta
+    if(Math.abs(lastScrollTop - st) <= delta)
+        return;
+    
+    // If they scrolled down and are past the navbar, add class .nav-up.
+    // This is necessary so you never see what is "behind" the navbar.
+    if (st > lastScrollTop && st > navbarHeight){
+        // Scroll Down
+        $('nav').removeClass('nav-down').addClass('nav-up');
+    } else {
+        // Scroll Up
+        if(st + $(window).height() < $(document).height()) {
+            $('nav').removeClass('nav-up').addClass('nav-down');
+        }
+    }
+    
+    lastScrollTop = st;
+}
+
+//END of navbar sequence
+
 //When you click "Done" filter, only show goals that have been completed
 $(".doneFilter").click(function(){
     $(".doneFilter").toggleClass("selected");
@@ -50,6 +92,18 @@ $(".funFilter").click(function(){
 //Once the parachute is at the top of the page, make a circle appear behind it that's a button
 
 //If you click the button, see a full-page bleed About page
+$("button.about").click(function(){
+        // $('.item, .content').hide();
+        $('.aboutPage').toggleClass(".reveal");
+        // $(this).next('.content').css('display', 'block');
+    });
+
+    // $('.close-content').on('click', function () {
+    //     $('.content, .overlay').hide();
+    //     $('.item').show();
+    // });
+
+// });
 
 //Make navigation disappear until you scroll up
 
