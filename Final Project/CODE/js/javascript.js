@@ -44,6 +44,7 @@ function hasScrolled() {
 
 //When you click "Done" filter, only show goals that have been completed
 $(".doneFilter").click(function(){
+  // $("div").filter(".undone").css("display:none;");
     $(".doneFilter").toggleClass("selected");
     $("div.notDone").toggleClass("invisible");
     $("div.done").toggleClass("doneFiltered");
@@ -92,14 +93,17 @@ $(".funFilter").click(function(){
 //Once the parachute is at the top of the page, make a circle appear behind it that's a button
 
 //If you click the button, see a full-page bleed About page
+
 $("button.about").click(function(){
-        // $('.item, .content').hide();
-        $('.aboutPage').show();
-        // $(this).next('.content').css('display', 'block');
-    });
+        $('.aboutPage').show("scale", "vertical", 10000);
+        $('.aboutPage').css("display: block;");
+              });
 $('#close').click(function () {
         $('.aboutPage').hide();
-    });
+              });
+
+
+// });
 
 // });
 
