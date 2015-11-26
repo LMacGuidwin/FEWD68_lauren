@@ -94,14 +94,12 @@ $(".funFilter").click(function(){
 //If you click the button, see a full-page bleed About page
 $("button.about").click(function(){
         // $('.item, .content').hide();
-        $('.aboutPage').toggleClass(".reveal");
+        $('.aboutPage').show();
         // $(this).next('.content').css('display', 'block');
     });
-
-    // $('.close-content').on('click', function () {
-    //     $('.content, .overlay').hide();
-    //     $('.item').show();
-    // });
+$('#close').click(function () {
+        $('.aboutPage').hide();
+    });
 
 // });
 
