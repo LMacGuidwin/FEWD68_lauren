@@ -1,5 +1,14 @@
 $(document).ready(function(){
 
+
+//QUESTIONS FOR ELAINE
+// 1) About page button becomes unclickable (or doesn't display the about page properly after the first click 
+// 2) Filters work additively? I.e. when I hit "Done" and then "undone", the done stop showing and undone appear
+// 3) Boxes adjust sizing as the screen shrinks/expands? Was there a tool? 
+// 4) About page div scroll instead of the background? (Mostly worried about mobile) 
+// 5) Parachute move up and then the circle grow from the parachute? 
+// 6) Once I do content modules, how to shift back/next between them? 
+
 ///NAV BAR HIDE/SHOW, note copied from JSFiddle
 // Hide Header on on scroll down
 var didScroll;
@@ -42,6 +51,30 @@ function hasScrolled() {
 
 //END of navbar sequence
 
+//Parachute offset
+//when user scrolls down
+//move parachute up
+
+// $(window).scroll(function () {
+//          $("img#parachute").offset({ left = 0, top = -5);
+
+// // var initialTop = 0;
+// // var initialWidth = 20%;
+// // var finalWidth = 10%;
+// // var finalTop = 0;
+
+//   $("#parachute").hasScrolled(function(){
+//         newPos = new Object();
+//         newPos.left = "0";
+//         newPos.top = "20";
+//         $("#parachute").offset(newPos);
+//     });
+
+
+//END of parachute offset
+
+
+
 //When you click "Done" filter, only show goals that have been completed
 $(".doneFilter").click(function(){
   // $("div").filter(".undone").css("display:none;");
@@ -50,6 +83,9 @@ $(".doneFilter").click(function(){
     $("div.done").toggleClass("doneFiltered");
     $("doneFilter").toggleClass("underline");
     });
+
+
+//if (".undoneFilter").clicked
 
 
 //When you click "UnDone" filter, only show goals that haven't been completed

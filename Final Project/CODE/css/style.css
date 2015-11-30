@@ -24,9 +24,10 @@
 
 div.aboutDescription{
   display:block;
-  width: 500px;
+  width: 550px;
   margin: 0 auto;
   margin-top:50px;
+
   color:white;
 
 }
@@ -65,6 +66,7 @@ li{
 
 #circle {
   display: inline-block;
+  margin: 0 auto;
   width: 80px;
   height: 80px;
   margin-top: 20px;
@@ -72,6 +74,8 @@ li{
   -moz-border-radius: 50px;
   -webkit-border-radius: 50px;
   border-radius: 50px;
+  z-index: 100px;
+
 }
 /*
 .leftSide{
@@ -140,8 +144,6 @@ h1{
   float:left;
   width:250px;
   height:250px;
-  /*width: 250px;
-  height:250px;*/
   background-color: rgba(255, 255, 255, .5);
   border: white .5px solid;
   text-align: center;
@@ -260,10 +262,70 @@ h5{
 MOBILE
 */
 
+@media (min-width:795){
+  .FAB{
+    display:none;
+  }
+}
+
 @media (min-width: 400px) and (max-width: 960px){
 
   body{
     background-image: url(../assets/background-tablet.jpg);
   }
   
+}
+
+@media (max-width: 795px){
+
+button.mobile{ 
+  display:inline-block;
+  float:right;
+  margin-left:80%;
+}
+div.mobileNav{
+  width:28px;
+  height:3px;
+  margin:5px;
+  background-color: black;
+  z-index: 99;
+}
+
+  ul{
+    display:none;
+  }
+  #circle {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  margin-top: 20px;
+  background: #64C2D0;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+}
+
+button.FAB {
+  display: inline-block;
+  float:right;
+  width: 80px;
+  height: 80px;
+  bottom: 2%;
+  right:2%;
+  /*margin-left: 80%;
+  margin-right: 10%;
+  margin-top: 90%;
+  margin-bottom:10%;*/
+  position: fixed;
+  background: #64C2D0;
+  -moz-border-radius: 50px;
+  -webkit-border-radius: 50px;
+  border-radius: 50px;
+  z-index: 100px;
+}
+
+p#credits{
+  font-size:10px;
+}
+
 }
