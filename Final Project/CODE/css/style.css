@@ -1,5 +1,21 @@
 * {box-sizing: border-box;}
 
+
+.clearfix {
+   content: " "; /* Older browser do not support empty content */
+/*   visibility: hidden;*/
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+section{
+  max-width: 1280px;
+  min-width:400px;
+  margin: 0 auto;
+  padding:0px;
+}
+
 .aboutPage {
     display: none;
     width: 100%;
@@ -10,6 +26,10 @@
     opacity: .95;
     z-index: 100;
     background-color: #64C2D0;
+}
+
+.reveal{
+  display:block;
 }
 
 #close{
@@ -75,8 +95,17 @@ li{
   -webkit-border-radius: 50px;
   border-radius: 50px;
   z-index: 100px;
+  transition: all .25s ease-in-out;
 
 }
+
+#circle:hover{
+  width:90px;
+  height:90px;
+  margin-top: 20px;
+  transform: scale(1.1);
+}
+
 /*
 .leftSide{
   margin-left: 25px;
@@ -85,6 +114,9 @@ li{
 .rightSide{
   margin-left: 400px;
 }*/
+
+
+
 
 button{
   border-style: none;
@@ -187,7 +219,7 @@ HOVER STATES
 
 }
 
-.selected{
+.underline{
   text-decoration: underline;
 }
 
@@ -258,6 +290,29 @@ h5{
   display:none;
 }
 
+
+/*TABLET*/
+
+
+@media (min-width: 500px) and (max-width: 768px){
+
+
+          section{
+            max-width: 768px;
+            min-width:500px;
+            margin: 0 auto;
+           /* padding:0px;*/
+          }
+
+          .goalBox{
+            display:inline-block;
+          /*  float:left;*/
+            width:350px;
+            height:350px;
+            padding-top: 50px;
+          }
+}
+
 /*
 MOBILE
 */
@@ -268,11 +323,25 @@ MOBILE
   }
 }
 
-@media (min-width: 400px) and (max-width: 960px){
+@media (min-width: 300px) and (max-width: 500px){
 
   body{
     background-image: url(../assets/background-tablet.jpg);
-  }
+          }
+
+  section{
+            width: 500px;
+            margin: 0 auto;
+           /* padding:0px;*/
+          }
+
+  .goalBox{
+            display:inline-block;
+          /*  float:left;*/
+            width:400px;
+            height:350px;
+            padding-top: 50px;
+          }
   
 }
 
@@ -324,7 +393,7 @@ button.FAB {
   z-index: 100px;
 }
 
-p#credits{
+#credits{
   font-size:10px;
 }
 

@@ -2,7 +2,6 @@ $(document).ready(function(){
 
 
 //QUESTIONS FOR ELAINE
-// 1) About page button becomes unclickable (or doesn't display the about page properly after the first click 
 // 2) Filters work additively? I.e. when I hit "Done" and then "undone", the done stop showing and undone appear
 // 3) Boxes adjust sizing as the screen shrinks/expands? Was there a tool? 
 // 4) About page div scroll instead of the background? (Mostly worried about mobile) 
@@ -76,28 +75,56 @@ function hasScrolled() {
 
 
 //When you click "Done" filter, only show goals that have been completed
-$(".doneFilter").click(function(){
-  // $("div").filter(".undone").css("display:none;");
-    $(".doneFilter").toggleClass("selected");
-    $("div.notDone").toggleClass("invisible");
-    $("div.done").toggleClass("doneFiltered");
-    $("doneFilter").toggleClass("underline");
-    });
+
+//ATTEMPTED if else statement
+// $(".doneFilter").click(function(){
+
+//     //check if To Do goals are already filtered to show.
+//             if ($('div.notDone').hasClass('notDoneFiltered')){
+//     //If so, remove filtered appearance and hide them
+//                 ($('div.notDone').removeClass('notDoneFiltered').addClass('invisible'); 
+                
+//             } 
+//     //if they aren't selected
+//             else {
+
+//                 $("div.notDone").addClass("invisible");
+//               }
+
+//     //check if Done goals have invisible class.          
+//              if ($('div.done').hasClass('invisible') {
+
+//     //If so, remove invisible class and add class "doneFiltered" to them
+//             ($('div.done').removeClass('invisible').addClass('doneFiltered'); 
+//     //else toggle class "doneFiltered" to them
+//             else {
+//                 $("div.done").toggleClass("doneFiltered");
+//             }
+//             }
 
 
-//if (".undoneFilter").clicked
+
+// //WORKING CODE!
+// $(".doneFilter").click(function(){
+//     $("div.notDone").toggleClass("invisible");
+//     $(".doneFilter").toggleClass("underline");
+//     $("div.done").toggleClass("doneFiltered");
+//     });
+
+
+//if (".undoneFilter")
 
 
 //When you click "UnDone" filter, only show goals that haven't been completed
 $(".undoneFilter").click(function(){
-    $(".undoneFilter").toggleClass("selected");
+    $(".undoneFilter").toggleClass("underline");
     $("div.done").toggleClass("invisible");
     $("div.notDone").toggleClass("notDoneFiltered");
     });
 
 //When you click "Learn" filter, only show goals that are pertinent to learning
 $(".learnFilter").click(function(){
-    $(".learnFilter").toggleClass("selected");
+    $(".learnFilter").toggleClass("underline");
     $("div.travel").toggleClass("invisible");
     $("div.fun").toggleClass("invisible");
     $("div.notDone").toggleClass("notDoneFiltered");
@@ -107,7 +134,7 @@ $(".learnFilter").click(function(){
 //When you click the Travel filter, only show goals related to traveling
 
 $(".travelFilter").click(function(){
-    $(".travelFilter").toggleClass("selected");
+    $(".travelFilter").toggleClass("underline");
     $("div.learn").toggleClass("invisible");
     $("div.fun").toggleClass("invisible");
     $("div.notDone").toggleClass("notDoneFiltered");
@@ -116,7 +143,7 @@ $(".travelFilter").click(function(){
 
 //When you click Fun filter, only show goals related to Fun/other category
 $(".funFilter").click(function(){
-    $(".funFilter").toggleClass("selected");
+    $(".funFilter").toggleClass("underline");
     $("div.learn").toggleClass("invisible");
     $("div.travel").toggleClass("invisible");
     $("div.notDone").toggleClass("notDoneFiltered");
@@ -131,12 +158,31 @@ $(".funFilter").click(function(){
 //If you click the button, see a full-page bleed About page
 
 $("button.about").click(function(){
-        $('.aboutPage').show("scale", "vertical", 10000);
-        $('.aboutPage').css("display: block;");
+        // $('.aboutPage').show("scale", "vertical", 10000);
+        $('.aboutPage').addClass("reveal");
               });
 $('#close').click(function () {
-        $('.aboutPage').hide();
+        $('.aboutPage').removeClass("reveal");
+        // $('.aboutPage').css("display: none;");
               });
+
+//     ATTEMPT 2
+$(".doneFilter").click(function(){                           //Click DONE button
+    $(".doneFilter").toggleClass("underline");               //toggle underline to show if filter is selected
+if($('.doneFilter').hasClass('underline')){                   //check if the Done filter is ON (underlined)
+   $("div.done").addClass("doneFiltered"); 
+   if ($('div.notDone').hasClass('notDoneFiltered')){    //if it's ON, check if Undone items are filtered bg
+   ($('div.notDone').removeClass('notDoneFiltered').addClass('invisible')); 
+   }  //if so, remove filter appearance and hide them
+   else {
+                $("div.notDone").addClass("invisible");
+              }  
+   }                                          //if not, just hide them
+else{                                                          //if it's OFF
+$("div.notDone").removeClass("invisible");                      //show Undone items   
+$("div.done").removeClass("doneFiltered");                   
+           }                                        
+});
 
 
 // });
