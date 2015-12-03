@@ -1,6 +1,12 @@
 * {box-sizing: border-box;}
 
 
+.aboutParachute{
+  width:15px;
+  height:10px;
+}
+
+
 .clearfix {
    content: " "; /* Older browser do not support empty content */
 /*   visibility: hidden;*/
@@ -85,6 +91,8 @@ li{
 }
 
 #circle {
+  color:white;
+  font-weight: bold;
   display: inline-block;
   margin: 0 auto;
   width: 80px;
@@ -97,6 +105,14 @@ li{
   z-index: 100px;
   transition: all .25s ease-in-out;
 
+}
+
+.circleDown{
+  margin-top:100px;
+}
+
+.circleUp{
+  margin-top:-10px;
 }
 
 #circle:hover{
@@ -143,6 +159,10 @@ body{
   background-size: 100%;
   background-attachment: fixed;
   font-family: 'Raleway', sans-serif;
+  display: block;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        background-size: cover;
 }
 
 
@@ -291,46 +311,54 @@ h5{
 }
 
 
-/*TABLET*/
-
-
-@media (min-width: 500px) and (max-width: 768px){
-
-
-          section{
-            max-width: 768px;
-            min-width:500px;
-            margin: 0 auto;
-           /* padding:0px;*/
-          }
-
-          .goalBox{
-            display:inline-block;
-          /*  float:left;*/
-            width:350px;
-            height:350px;
-            padding-top: 50px;
-          }
-}
-
-/*
-MOBILE
-*/
-
 @media (min-width:795){
   .FAB{
     display:none;
   }
 }
 
-@media (min-width: 300px) and (max-width: 500px){
+/*
+TABLET
+*/
+
+@media (min-width: 600px) and (max-width: 1000px){
+
+    section{
+            max-width: 800px;
+            min-width:500px;
+            margin: 0 auto;
+           /* padding:0px;*/
+          }
+
+    .goalBox{
+            display:inline-block;
+          /*  float:left;*/
+            width:350px;
+            height:350px;
+            padding-top: 50px;
+             }
+      body{
+            background-image: url(../assets/background-tablet.jpg);
+            display: block;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                background-size: cover;
+                  }
+
+
+}
+/*
+MOBILE
+*/
+
+@media (max-width: 600px){
 
   body{
-    background-image: url(../assets/background-tablet.jpg);
+    background-image: url(../assets/background-mobile.jpg);
           }
 
   section{
-            width: 500px;
+            width: 300px;
             margin: 0 auto;
            /* padding:0px;*/
           }
@@ -338,14 +366,19 @@ MOBILE
   .goalBox{
             display:inline-block;
           /*  float:left;*/
-            width:400px;
-            height:350px;
+            width:250px;
+            height:250px;
             padding-top: 50px;
           }
-  
 }
 
-@media (max-width: 795px){
+
+/*
+BOTH TABLET & MOBILE
+*/ 
+
+@media (max-width: 1000px){
+
 
 button.mobile{ 
   display:inline-block;
@@ -373,6 +406,8 @@ div.mobileNav{
   -webkit-border-radius: 50px;
   border-radius: 50px;
 }
+
+
 
 button.FAB {
   display: inline-block;

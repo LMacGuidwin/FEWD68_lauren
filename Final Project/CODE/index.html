@@ -7,21 +7,24 @@
   <link href='https://fonts.googleapis.com/css?family=Raleway:400,100,200,300,500,600,700,800,900' rel='stylesheet' type='text/css'>
 </head>
 
+
+
+
 <body>
           <nav id="header" class="nav-down">
               <ul>
                     <li><button class="doneFilter">Done</button></li>
                     <li><button class="undoneFilter">To Do</button></li>
-                    <li><button class="about" id="circle"></button></li>
+                    <li><button class="about circleUp" id="circle">?</button></li>
                     <li><button class="learnFilter">Learn</button></li>
                     <li><button class="travelFilter">Travel</button></li>
                     <li><button class="funFilter">Fun</button></li>
             </ul>
-          <button class="mobile">
+         <!--  <button class="mobile">
             <div class="mobileNav"></div>
             <div class="mobileNav"></div>
             <div class="mobileNav"></div>
-          </button>
+          </button> -->
           </nav>
 
   <br>
@@ -29,6 +32,8 @@
     <img id = "filter" src="assets/icon-filter.svg">
     </button>
 
+
+<!-- About Page hidden until circle on navigation is clicked-->
   <div class="aboutPage">
 
     <button id="close">x</button>
@@ -77,13 +82,21 @@
 
            <!-I did a project in 7th grade science on the African savannah. I probably know more about baobab trees and termite caste structure than I do about my hometown ecosystem. -->
 
+<!-- Wrap section around "goalboxes" to allow alignment -->
     <section class="clearfix">
 
+
+<!-- Each goal is labeled with a "status" (done/notDone) and a "topic" (learn/travel/fun) -->
            <div class="goalBox notDone fun">
              <img src="assets/icon-redcarpet.svg" alt="" class="goalIcon">
              <h3>Appear in a movie.</h3>
              <img src="assets/icon-watch.svg" alt="" class="dateIcon">
              <h4 class="dueDate">2020</h4>
+               <div class="hidden">
+                  
+
+
+               </div>
            </div>
            
           <!--Preferably in one with either Bradley Cooper or Joseph Gordon-Levitt. But I can be flexible.-->
@@ -459,85 +472,85 @@
 
            <div class="goalBox notDone learn">
              <img src="assets/icon-skate-retinaicon.svg" alt="" class="goalIcon">
-             <h3>Take ice-skating lessons</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2017</h4>
-           </div>
+              <h3>Take ice-skating lessons</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                 <h4 class="dueDate">2017</h4>
+                  </div>
 
            <div class="goalBox notDone learn">
              <img src="assets/icon-microphone.svg" alt="" class="goalIcon">
-             <h3>Take singing lessons</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">EOY 2016</h4>
-           </div>
+               <h3>Take singing lessons</h3>
+                 <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                   <h4 class="dueDate">EOY 2016</h4>
+                     </div>
 
            <div class="goalBox notDone travel">
              <img src="assets/icon-shoes.svg" alt="" class="goalIcon">
-             <h3>Touch all 50 states</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2025</h4>
-           </div>
+              <h3>Touch all 50 states</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">2025</h4>
+                    </div>
 
            <div class="goalBox notDone travel">
              <img src="assets/icon-train-ericBenoit.svg" alt="" class="goalIcon">
-             <h3>Trans-Siberian Railway</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2030</h4>
-           </div>
+              <h3>Trans-Siberian Railway</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">2030</h4>
+                    </div>
 
            <div class="goalBox done fun">
              <img src="assets/icon-carrot-sylviaKim.svg" alt="" class="goalIcon">
-             <h3>Try vegetarianism for 21 days</h3>
-             <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">November 2015</h4>
-           </div>
+              <h3>Try vegetarianism for 21 days</h3>
+                <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">November 2015</h4>
+                   </div>
 
             <div class="goalBox notDone travel">
              <img src="assets/icon-ferriss.svg" alt="" class="goalIcon">
-             <h3>Visit Cape Town</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2019</h4>
-           </div>
+              <h3>Visit Cape Town</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">2019</h4>
+                    </div>
 
            <div class="goalBox notDone travel">
              <img src="assets/icon-home.svg" alt="" class="goalIcon">
-             <h3>Visit Homeboy Industries</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2017</h4>
-           </div>
+              <h3>Visit Homeboy Industries</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                 <h4 class="dueDate">2017</h4>
+                   </div>
 
            <div class="goalBox notDone fun">
              <img src="assets/icon-redcarpet.svg" alt="" class="goalIcon">
-             <h3>Walk the red carpet.</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2018</h4>
-           </div>
+              <h3>Walk the red carpet.</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">2018</h4>
+                   </div>
 
            <div class="goalBox notDone fun">
              <img src="assets/icon-cat.svg" alt="" class="goalIcon">
-             <h3>Wear a cat woman suit</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2020</h4>
-           </div>
+               <h3>Wear a cat woman suit</h3>
+                 <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                   <h4 class="dueDate">2020</h4>
+                     </div>
 
             <div class="goalBox notDone learn">
-             <img src="assets/icon-trophy.svg" alt="" class="goalIcon">
-             <h3>Win a UX Award</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2020</h4>
-           </div>
+              <img src="assets/icon-trophy.svg" alt="" class="goalIcon">
+                 <h3>Win a UX Award</h3>
+                   <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                     <h4 class="dueDate">2020</h4>
+                       </div>
 
            <div class="goalBox done fun">
              <img src="assets/icon-diamond.svg" alt="" class="goalIcon">
-             <h3>Witness a proposal</h3>
-             <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">June 2015</h4>
-           </div>
-
+               <h3>Witness a proposal</h3>
+                  <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
+                     <h4 class="dueDate">June 2015</h4>
+                        </div>
 
 </section>
-    
+
   </div>
+
 
 <script language="javascript" type="text/javascript" src="js/jquery2.js"></script>
 <script language="javascript" type="text/javascript" src="js/javascript.js"></script>
@@ -545,4 +558,6 @@
 
 
 </body>
+
+
 </html>
