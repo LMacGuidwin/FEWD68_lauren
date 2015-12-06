@@ -36,7 +36,7 @@
 <!-- About Page hidden until circle on navigation is clicked-->
   <div class="aboutPage">
 
-    <button id="close">x</button>
+    <button id="xclose">x</button>
 
       <div class="aboutDescription">
 
@@ -65,102 +65,115 @@
   <img id = "parachute" src="assets/icon-Parachute.svg">
   <br>
   <!--div.row*12>div.goalBox*4>img.goalIcon+h3{GOAL ITEM HERE}+img.dateIcon+h4.dueDate{DUE DATE HERE}-->
-  <!--
+  
 
 
 
 <br>
 
-<div class="goalMatrix">
+<!-- <div class="goalMatrix"> -->
 
-           <div class="goalBox notDone travel"> 
-             <img src="assets/icon-Safari.svg" alt="" class="goalIcon">
-             <h3>African safari</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">Summer 2018</h4>
-           </div>
-
-           <!-I did a project in 7th grade science on the African savannah. I probably know more about baobab trees and termite caste structure than I do about my hometown ecosystem. -->
+           
 
 <!-- Wrap section around "goalboxes" to allow alignment -->
     <section class="clearfix">
 
-
 <!-- Each goal is labeled with a "status" (done/notDone) and a "topic" (learn/travel/fun) -->
+
+        <div class="goalBox notDone travel"> 
+            <img src="assets/icon-Safari.svg" alt="" class="goalIcon">
+              <h3>African safari</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">Summer 2018</h4>
+                     <button class="dialogMe">Details</button>
+                     <div class="hidden dialog" id = "">
+                        <h2>African safari</h2>
+                        <p>Lions, tigers, and bears, y'all.</p>
+                        <p></p>
+                        <button id="okButton">Ok</button>
+                      </div>
+                    </div>
+
+           <!--I did a project in 7th grade science on the African savannah. I probably know more about baobab trees and termite caste structure than I do about my hometown ecosystem. -->
+
+
            <div class="goalBox notDone fun">
              <img src="assets/icon-redcarpet.svg" alt="" class="goalIcon">
-             <h3>Appear in a movie.</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2020</h4>
-               <div class="hidden">
+              <h3>Appear in a movie.</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">2020</h4>
+                    <button class="dialogMe">Details</button>
+                     <div class="hidden dialog movie">
+                        <h2>Appear in a Movie</h2>
+                        <p>Preferably in one with either Bradley Cooper or Joseph Gordon-Levitt. But I can be flexible.</p>
+                        <p></p>
+                        <button id="okButton">Ok</button>
+                      </div>
                   
-
-
                </div>
            </div>
            
-          <!--Preferably in one with either Bradley Cooper or Joseph Gordon-Levitt. But I can be flexible.-->
 
            <div class="goalBox notDone fun">
              <img src="assets/icon-friends.svg" alt="" class="goalIcon">
-             <h3>Be a matchmaker.</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">Love knows no time</h4>
-           </div>
+              <h3>Be a matchmaker.</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">Love knows no time</h4>
+                    </div>
 
            <!--I would be the happiest person ever if I could make 2 friends happy at once. Friends can, many times, be the best filters in the algorithm for finding compatibility.{Link to psychology study.} Minimum dating time, I'd say is 3 months.-->
 
            <div class="goalBox done travel">
              <img src="assets/icon-ship.svg" alt="" class="goalIcon">
-             <h3>Boat ride in Venice</h3>
-             <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">July 2014</h4>
-           </div>
+              <h3>Boat ride in Venice</h3>
+                <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
+                 <h4 class="dueDate">July 2014</h4>
+                  </div>
 
            <!--Swung by Venice last summer after my cousin's wedding in Sorrento (fairly certain I will never see a more beautiful ceremony). Venice is a -->
 
            <div class="goalBox notDone learn">
              <img src="assets/icon-laptop.svg" alt="" class="goalIcon">
-             <h3>Build a website.</h3>
-             <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">December 7, 2015!</h4>
-           </div>
+               <h3>Build a website.</h3>
+                 <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
+                   <h4 class="dueDate">December 7, 2015!</h4>
+                     </div>
 
            <!--You're looking at it.-->
 
            <div class="goalBox notDone fun">
              <img src="assets/icon-fish.svg" alt="" class="goalIcon">
-             <h3>Catch a fish.</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">EOY 2017</h4>
-           </div>
+               <h3>Catch a fish.</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">EOY 2017</h4>
+                    </div>
 
            <!--I once caught fish bones. Does that count?-->
 
            <div class="goalBox done travel">
              <img src="assets/icon-China.svg" alt="" class="goalIcon">
-             <h3>Climb the Great Wall</h3>
-             <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">October 2014</h4>
-           </div>
+              <h3>Climb the Great Wall</h3>
+                <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">October 2014</h4>
+                    </div>
 
            <!--Really beautiful, kind of deteriorating section of the wall. We found this random cab driver who took us for about $40 for the day. Super steep! An incredible feat, though. -->
 
            <div class="goalBox notDone fun">
              <img src="assets/icon-chess.svg" alt="" class="goalIcon">
-             <h3>Consult for a startup.</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">EOY 2017</h4>
-           </div>
+              <h3>Consult for a startup.</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">EOY 2017</h4>
+                    </div>
 
            <!--I've always been interested in the tech industry (hence, my love affair with SF), but I worry that so much energy is put into building products like Snapchat or Tinder and not enough into industries that are actually in need, like health or technology. I'm currently freelancing for an education startup called nClass, but hope to move into more general strategy/growth consulting to give more help.-->
 
            <div class="goalBox done fun">
              <img src="assets/icon-plant-juanLeon.svg" alt="" class="goalIcon">
-             <h3>Cook with homegrown food</h3>
-             <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">Fall 2014</h4>
-           </div>
+               <h3>Cook with homegrown food</h3>
+                 <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
+                   <h4 class="dueDate">Fall 2014</h4>
+                    </div>
 
            <!--When I was living in SF, we had a basil plant that was growing so big, I was certain it was trying to attack our house. My roommate Olivia and I made basil-pesto by pruning about 80% of its leaves. It was amazing. 
 
@@ -168,37 +181,37 @@
 
            <div class="goalBox notDone fun">
              <img src="assets/icon-rocker.svg" alt="" class="goalIcon">
-             <h3>Crowdsurf</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">DUE DATE HERE</h4>
-           </div>
+               <h3>Crowdsurf</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">DUE DATE HERE</h4>
+                    </div>
 
            <!--Given my aversion to crowded concerts, I'm not sure when I'd ever complete this.-->
 
           <div class="goalBox notDone travel">
              <img src="assets/icon-sushi-arthurShlain.svg" alt="" class="goalIcon">
-             <h3>Eat sushi in Tokyo</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2020</h4>
-           </div>
+              <h3>Eat sushi in Tokyo</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">2020</h4>
+                     </div>
 
            <!--Ramen is probably my favorite food ever. But sushi is the standard dish-to-get when in Japan. I'll probably be completely spoiled and never eat sushi again.-->
 
            <div class="goalBox notDone fun">
              <img src="assets/icon-rocket.svg" alt="" class="goalIcon">
-             <h3>Fast Co. Most Creative People</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2030</h4>
-           </div>
+              <h3>Fast Co. Most Creative People</h3>
+               <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                 <h4 class="dueDate">2030</h4>
+                  </div>
 
            <!--Described as a "snapshot of the range and depth of creativity across our business landscape," Fast Company puts out an annual list of the most creative people, with winners ranging from producers to software engineers, founders, or Amy Poehler. Couldn't tell whether this list or Maxim's hot 100 would be less attainable.So there. -->
 
            <div class="goalBox done fun">
              <img src="assets/icon-camera.svg" alt="" class="goalIcon">
-             <h3>Film and edit a video</h3>
-             <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">January 2013</h4>
-           </div>
+              <h3>Film and edit a video</h3>
+                <img src="assets/icon-check-white.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">January 2013</h4>
+                    </div>
 
           <!--I'm pretty obsessed with stop-motion photography, and had a ton of fun making videos on my experiences while backpacking Asia in 2012 for 3 months.-->
 
@@ -465,10 +478,10 @@
 
            <div class="goalBox notDone travel">
              <img src="assets/icon-parachute.svg" alt="" class="goalIcon">
-             <h3>Sunrise in Cappadocia</h3>
-             <img src="assets/icon-watch.svg" alt="" class="dateIcon">
-             <h4 class="dueDate">2019</h4>
-           </div>
+              <h3>Sunrise in Cappadocia</h3>
+                <img src="assets/icon-watch.svg" alt="" class="dateIcon">
+                  <h4 class="dueDate">2019</h4>
+                    </div>
 
            <div class="goalBox notDone learn">
              <img src="assets/icon-skate-retinaicon.svg" alt="" class="goalIcon">

@@ -1,5 +1,98 @@
 * {box-sizing: border-box;}
 
+/*Descriptions
+@import url(http://fonts.googleapis.com/css?family=RobotoDraft:500);*/
+
+.dialogMe
+{
+  background: rgba();
+  border-radius: none;
+  padding: 10px;
+  color:white;
+  display:none;
+  font-size: 10px;
+}
+
+.dialog {
+  margin: 0;
+  background: #fff;
+  display: none;
+  font-family: 'RobotoDraft', sans-serif;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 300px;
+  height: 185px;
+  margin-left: -150px;
+  margin-top: -92.5px;
+  border-radius: 2px;
+  box-shadow: 0 27px 55px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 17px 17px 0 rgba(0, 0, 0, 0.15);
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  padding: 15px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -0-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  opacity: 0;
+  z-index: 500;
+}
+
+.dialog h2 {
+  margin-top: 0px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+#close {
+  float: right;
+  font-size: 20px;
+  margin-top: -2.5px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -0-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+#okButton {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-left: -75px;
+  position: relative;
+  width: 150px;
+  height: 37px;
+  border: none;
+  outline: none;
+  letter-spacing: 3px;
+  cursor: pointer;
+  overflow: hidden;
+  user-select: none;
+  border-radius: 3px;
+  box-shadow: 0 4px 10px 0 rgba(0,0,0,.4);
+  background:#212121;
+  color: #fff;
+}
+
+.dialogBlack {
+  margin: 0;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background: #000;
+  opacity: 0;
+  z-index: -5;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -0-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+
+/*Descriptions END*/
 
 .aboutParachute{
   width:15px;
@@ -38,7 +131,7 @@ section{
   display:block;
 }
 
-#close{
+#xclose{
   color:white;
   font-weight: bold;
   width:30px;
@@ -279,6 +372,14 @@ HOVER STATES
   color: rgb(240, 230, 140);
 }
 
+.goalBox:hover .dialogMe{
+  display:inline-block;
+  margin-left: 60px;
+  margin-right:0px;
+  float:left;
+  color: rgb(240, 230, 140);
+  font-size: 20px;
+}
 
 
 
@@ -351,14 +452,14 @@ TABLET
 MOBILE
 */
 
-@media (max-width: 600px){
+@media (max-width: 567px){
 
   body{
     background-image: url(../assets/background-mobile.jpg);
           }
 
   section{
-            width: 300px;
+            width: 500px;
             margin: 0 auto;
            /* padding:0px;*/
           }
@@ -379,6 +480,18 @@ BOTH TABLET & MOBILE
 
 @media (max-width: 1000px){
 
+nav{
+  display: block;
+  
+  /*margin-top:0px;*/
+  background-color: white;
+  width: 50px;
+  height: 100px;
+  bottom: 50px;
+  top:90%;
+  position:fixed;
+  transition: top 0.2s ease-in-out;
+}
 
 button.mobile{ 
   display:inline-block;
