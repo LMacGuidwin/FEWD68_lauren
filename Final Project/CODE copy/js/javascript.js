@@ -11,92 +11,87 @@ $(document).ready(function(){
 
 // })
 
-// $(".dialogMe").click(function() {
-//   dialogMe();
-// });
+$(".dialogMe").click(function() {
+  dialogMe();
+});
 
-// function dialogMe() {
-//   $(".dialog").css("display", "block");
-//   $(".dialogBlack").css("opacity", "0.5");
-//   $(".dialogBlack").css("z-index", "250");
-//   $(".dialog p, .dialog h2").css("opacity", "1");
-//   $("#close").css("opacity", "1");
-//   $("#okButton").css("opacity", "1");
-//   $(".dialog").css("height", "185px");
-//   $(".dialog").css("width", "300px");
-//   $(".dialog").css("padding", "15px");
-//   $(".dialog").css("margin-left", "-174.5px");
-//   setTimeout(function() {
-//     $(".dialog").css("opacity", "1");
-//   }, 400);
-// }
+function dialogMe() {
+  $(".dialog").css("display", "block");
+  $(".dialogBlack").css("opacity", "0.5");
+  $(".dialogBlack").css("z-index", "250");
+  $(".dialog p, .dialog h2").css("opacity", "1");
+  $("#close").css("opacity", "1");
+  $("#okButton").css("opacity", "1");
+  $(".dialog").css("height", "185px");
+  $(".dialog").css("width", "300px");
+  $(".dialog").css("padding", "15px");
+  $(".dialog").css("margin-left", "-174.5px");
+  setTimeout(function() {
+    $(".dialog").css("opacity", "1");
+  }, 400);
+}
 
-// $(".dialog #close, .dialog #okButton, .dialogBlack").click(function() {
-//   $(".dialog p, .dialog h2").css("opacity", "0");
-//   $(".dialogBlack").css("opacity", "0");
-//   $(".dialogBlack").css("z-index", "-5");
-//   $("#close").css("opacity", "0");
-//   $("#okButton").css("opacity", "0");
-//   $(".dialog").css("height", "0px");
-//   $(".dialog").css("width", "0px");
-//   $(".dialog").css("margin-left", "174.5px");
-//   $(".dialog").css("padding", "0px");
-//   setTimeout(function() {
-//     $(".dialog").css("opacity", "0");
-//   }, 400);
-// });
+$(".dialog #close, .dialog #okButton, .dialogBlack").click(function() {
+  $(".dialog p, .dialog h2").css("opacity", "0");
+  $(".dialogBlack").css("opacity", "0");
+  $(".dialogBlack").css("z-index", "-5");
+  $("#close").css("opacity", "0");
+  $("#okButton").css("opacity", "0");
+  $(".dialog").css("height", "0px");
+  $(".dialog").css("width", "0px");
+  $(".dialog").css("margin-left", "174.5px");
+  $(".dialog").css("padding", "0px");
+  setTimeout(function() {
+    $(".dialog").css("opacity", "0");
+  }, 400);
+});
 
-// dialogMe();
+dialogMe();
 
 //ALERT END
 
 
 ///NAV BAR HIDE/SHOW, note copied from JSFiddle
 // Hide Header on on scroll down
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var navbarHeight = $('nav').outerHeight();
 
+        $(window).scroll(function(event){
+            didScroll = true;
+        });
 
-// if (document.documentElement.clientWidth >= 765px) {
-  // scripts
+        setInterval(function() {
+            if (didScroll) {
+                hasScrolled();
+                didScroll = false;
+            }
+        }, 250);
 
-          var didScroll;
-          var lastScrollTop = 0;
-          var delta = 5;
-          var navbarHeight = $('nav').outerHeight();
-
-                  $(window).scroll(function(event){
-                      didScroll = true;
-                  });
-
-                  setInterval(function() {
-                      if (didScroll) {
-                          hasScrolled();
-                          didScroll = false;
-                      }
-                  }, 250);
-
-                  function hasScrolled() {
-                      var st = $(this).scrollTop();
-                      
-                      // Make sure they scroll more than delta
-                      if(Math.abs(lastScrollTop - st) <= delta)
-                          return;
-                      
-                      // If they scrolled down and are past the navbar, add class .nav-up.
-                      // This is necessary so you never see what is "behind" the navbar.
-                      if (st > lastScrollTop && st > navbarHeight){
-                          // Scroll Down
-                          $('nav').removeClass('nav-down').addClass('nav-up');
-                          $('#circle').removeClass('circleUp').addClass('circleDown');
-                      } else {
-                          // Scroll Up
-                          if(st + $(window).height() < $(document).height()) {
-                              $('nav').removeClass('nav-up').addClass('nav-down');
-                              $('#circle').removeClass('circleDown').addClass('circleUp');
-                          }
-                      }
-                      
-                      lastScrollTop = st;
-                  }
+        function hasScrolled() {
+            var st = $(this).scrollTop();
+            
+            // Make sure they scroll more than delta
+            if(Math.abs(lastScrollTop - st) <= delta)
+                return;
+            
+            // If they scrolled down and are past the navbar, add class .nav-up.
+            // This is necessary so you never see what is "behind" the navbar.
+            if (st > lastScrollTop && st > navbarHeight){
+                // Scroll Down
+                $('nav').removeClass('nav-down').addClass('nav-up');
+                $('#circle').removeClass('circleUp').addClass('circleDown');
+            } else {
+                // Scroll Up
+                if(st + $(window).height() < $(document).height()) {
+                    $('nav').removeClass('nav-up').addClass('nav-down');
+                    $('#circle').removeClass('circleDown').addClass('circleUp');
+                }
+            }
+            
+            lastScrollTop = st;
+        }
 
 
 
@@ -106,17 +101,11 @@ $("button.about").click(function(){
         // $('.aboutPage').show("scale", "vertical", 10000);
         $('.aboutPage').addClass("reveal");
               });
-
 $('#xclose').click(function () {
         $('.aboutPage').removeClass("reveal");
         // $('.aboutPage').css("display: none;");
               });
 
-//FAB navigation filter
-
-$('button.FAB').click(function(){
-  $('nav').toggleClass('opacity');
-});
 
 
 

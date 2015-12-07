@@ -3,7 +3,7 @@
 /*Descriptions
 @import url(http://fonts.googleapis.com/css?family=RobotoDraft:500);*/
 
-/*.dialogMe
+.dialogMe
 {
   background: rgba();
   border-radius: none;
@@ -89,7 +89,7 @@
   -moz-transition: all 0.5s ease-in-out;
   -0-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-}*/
+}
 
 
 /*Descriptions END*/
@@ -347,8 +347,6 @@ HOVER STATES
   color: rgb(240, 230, 140);
 }
 
-/*When hovered over a completed goal, turn background dark & text color green*/
-
 .done:hover h4.dueDate{
   display:inline-block;
   margin:auto;
@@ -374,39 +372,21 @@ HOVER STATES
   color: rgb(240, 230, 140);
 }
 
-.description{
-  display: none
-}
-
-.done:hover div.description{
-  display:block;
-  color:white;
-  font-family: Raleway;
-  font-size:10px;
-  margin-left:10px;
-  margin-right:10px;
-}
-
-.notDone:hover div.description{
-  display:block;
-  color:white;
-  font-size:10px;
-}
-/*.goalBox:hover .dialogMe{
+.goalBox:hover .dialogMe{
   display:inline-block;
   margin-left: 60px;
   margin-right:0px;
   float:left;
   color: rgb(240, 230, 140);
   font-size: 20px;
-}*/
+}
 
 
 
 
 /*goal names*/
 h3{
-  margin-top:0px;
+  margin-top:5px;
 }
 
 /*due date style*/
@@ -424,20 +404,19 @@ h5{
 /*watch or check*/
 .dateIcon{
   width:25px;
+
 }
 
-/*Invisible class to "hide" goal boxes when filtered*/
 .invisible{
   display:none;
 }
 
-/*FAB will not appear unless on a tablet or mobile device*/
 
-.FAB{
+@media (min-width:795){
+  .FAB{
     display:none;
   }
-
-
+}
 
 /*
 TABLET
@@ -473,7 +452,7 @@ TABLET
 MOBILE
 */
 
-@media (max-width: 599px){
+@media (max-width: 567px){
 
   body{
     background-image: url(../assets/background-mobile.jpg);
@@ -499,69 +478,37 @@ MOBILE
 BOTH TABLET & MOBILE
 */ 
 
-@media (min-width: 0px) and (max-width: 1000px){
+@media (max-width: 1000px){
 
 nav{
-  float:left;
-  opacity: 0.0;  
-  width: 75px;
-  height: 330px;
-  bottom: 10%;
-  top:60%;
-  right:2%;
-  margin-top:700px;
+  display: block;
+  
+  /*margin-top:0px;*/
+  background-color: white;
+  width: 50px;
+  height: 100px;
+  bottom: 50px;
+  top:90%;
   position:fixed;
-  font-size: 12px;
-/*  position:fixed;*/
-/*  transition: top 0.2s ease-in-out;*/
+  transition: top 0.2s ease-in-out;
 }
-nav.li{
-  padding-left: 1px;
-}
-
-.circle{
-  display: block;
-  margin-top: 5px;
-}
-
-.opacity{
-  display:block;
-  opacity:1.0;
-}
-.invisible{
-  display:none;
-}
-
-
-.learnFilter{
-  margin-top: 20px;
-  display:block;
-}
-
-.aboutPage{
-  margin-bottom: 20px;
-}
-
-ul{
-  display: block;
-  }
 
 button.mobile{ 
   display:inline-block;
   float:right;
   margin-left:80%;
 }
-
-/*div.mobileNav{
-  display:none;
+div.mobileNav{
   width:28px;
   height:3px;
   margin:5px;
   background-color: black;
   z-index: 99;
-}*/
+}
 
-  
+  ul{
+    display:none;
+  }
   #circle {
   display: inline-block;
   width: 80px;
